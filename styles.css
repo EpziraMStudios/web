@@ -1,0 +1,44 @@
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+.player-container {
+    position: relative;
+}
+
+.player-ball {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; /* Ancho y color del triángulo */
+    border-right: 20px solid transparent; /* Ancho y color del triángulo */
+    border-bottom: 35px solid black; /* Altura y color del triángulo */
+    border-radius: 10px; /* Radio para redondear las puntas */
+}
+
+.triangle-top {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent; /* Ancho y color del triángulo superior */
+    border-right: 17px solid transparent; /* Ancho y color del triángulo superior */
+    border-bottom: 30px solid yellow; /* Altura y color del triángulo superior */
+    border-radius: 8px; /* Radio para redondear las puntas */
+    top: -28px; /* Ajusta según el tamaño del triángulo principal */
+    left: 50%; /* Posiciona en el centro del contenedor principal */
+    transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+
+
